@@ -2,12 +2,11 @@ apply plugin: 'com.android.application'
 //apply plugin: dodola.anole.lib.AnolePlugin
 apply plugin:'dodola.anole.plugin'
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.2"
+    compileSdkVersion 28
     defaultConfig {
-        applicationId "dodola.anole"
+        applicationId "sjoner.anole"
         minSdkVersion 14
-        targetSdkVersion 24
+        targetSdkVersion 28
         versionCode 2
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

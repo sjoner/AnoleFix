@@ -26,7 +26,7 @@ bintray {
         name = 'anolefix'
         desc = 'another hotfix framework'
         licenses = ['MIT']
-        vcsUrl = 'https://github.com/dodola/AnoleFix'
+        vcsUrl = 'https://github.com/sjoner/AnoleFix'
         version {
             name = '1.0.1'
             desc = 'another hotfix framework'
@@ -41,7 +41,7 @@ publishing {
     publications {
         MyPublication(MavenPublication) {
             from components.java
-            groupId 'dodola.anole.plugin'
+            groupId 'sjoner.anole.plugin'
             artifactId 'gradle_plugin'
             version '1.0.1'
         }
