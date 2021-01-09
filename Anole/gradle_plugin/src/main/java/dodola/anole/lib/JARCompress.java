@@ -28,17 +28,17 @@ import java.util.jar.JarOutputStream;
 
 public class JARCompress {
     /**
-     * jarå‹ç¼©åŠŸèƒ½æµ‹è¯•.
+     * jarÑ¹Ëõ¹¦ÄÜ²âÊÔ.
      *
-     * @param dir     æ‰€è¦å‹ç¼©çš„ç›®å½•åï¼ˆåŒ…å«ç»å¯¹è·¯å¾„ï¼‰
-     * @param jarName å‹ç¼©åçš„æ–‡ä»¶å
+     * @param dir     ËùÒªÑ¹ËõµÄÄ¿Â¼Ãû£¨°üº¬¾ø¶ÔÂ·¾¶£©
+     * @param jarName Ñ¹ËõºóµÄÎÄ¼şÃû
      * @throws Exception
      */
     public static void doIt(String dir, String jarName) throws Exception {
         File folderObject = new File(dir);
         if (folderObject.exists()) {
             List fileList = getSubFiles(new File(dir));
-            // å‹ç¼©æ–‡ä»¶å
+            // Ñ¹ËõÎÄ¼şÃû
             FileOutputStream fos = new FileOutputStream(jarName);
             JarOutputStream zos = new JarOutputStream(fos);
             JarEntry ze = null;
@@ -60,15 +60,15 @@ public class JARCompress {
             }
             zos.close();
         } else {
-            throw new Exception("æ–‡ä»¶å¤¹ä¸å­˜åœ¨!");
+            throw new Exception("ÎÄ¼ş¼Ğ²»´æÔÚ!");
         }
     }
 
     /**
-     * å–å¾—æŒ‡å®šç›®å½•ä»¥åŠå…¶å„çº§å­ç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶çš„åˆ—è¡¨ï¼Œæ³¨æ„ï¼Œè¿”å›çš„åˆ—è¡¨ä¸­ä¸å«ç›®å½•.
+     * È¡µÃÖ¸¶¨Ä¿Â¼ÒÔ¼°Æä¸÷¼¶×ÓÄ¿Â¼ÏÂµÄËùÓĞÎÄ¼şµÄÁĞ±í£¬×¢Òâ£¬·µ»ØµÄÁĞ±íÖĞ²»º¬Ä¿Â¼.
      *
-     * @param baseDir File æŒ‡å®šçš„ç›®å½•
-     * @return åŒ…å«java.io.Fileçš„List
+     * @param baseDir File Ö¸¶¨µÄÄ¿Â¼
+     * @return °üº¬java.io.FileµÄList
      */
     private static List getSubFiles(File baseDir) {
         List fileList = new ArrayList();
@@ -85,12 +85,12 @@ public class JARCompress {
     }
 
     /**
-     * ç»™å®šæ ¹ç›®å½•åŠæ–‡ä»¶çš„å®é™…è·¯å¾„ï¼Œè¿”å›å¸¦æœ‰ç›¸å¯¹è·¯å¾„çš„æ–‡ä»¶åï¼Œç”¨äºzipæ–‡ä»¶ä¸­çš„è·¯å¾„.
-     * å¦‚å°†ç»å¯¹è·¯å¾„ï¼ŒbaseDir\dir1\dir2\file.txtæ”¹æˆ dir1/dir2/file.txt
+     * ¸ø¶¨¸ùÄ¿Â¼¼°ÎÄ¼şµÄÊµ¼ÊÂ·¾¶£¬·µ»Ø´øÓĞÏà¶ÔÂ·¾¶µÄÎÄ¼şÃû£¬ÓÃÓÚzipÎÄ¼şÖĞµÄÂ·¾¶.
+     * Èç½«¾ø¶ÔÂ·¾¶£¬baseDir\dir1\dir2\file.txt¸Ä³É dir1/dir2/file.txt
      *
-     * @param baseDir      java.lang.String æ ¹ç›®å½•
-     * @param realFileName java.io.File å®é™…çš„æ–‡ä»¶å
-     * @return ç›¸å¯¹æ–‡ä»¶å
+     * @param baseDir      java.lang.String ¸ùÄ¿Â¼
+     * @param realFileName java.io.File Êµ¼ÊµÄÎÄ¼şÃû
+     * @return Ïà¶ÔÎÄ¼şÃû
      */
     private static String getAbsFileName(String baseDir, File realFileName) {
         File real = realFileName;

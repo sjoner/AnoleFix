@@ -18,7 +18,6 @@
 package dodola.anole.lib;
 
 import com.android.annotations.NonNull;
-import com.android.utils.AsmUtils;
 
 import org.objectweb.asm.AnnotationVisitor;
 import org.objectweb.asm.ClassVisitor;

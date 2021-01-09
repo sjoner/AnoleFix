@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-//apply plugin: dodola.anole.lib.AnolePlugin
+//apply plugin: 'sjoner.anole.lib.AnolePlugin'
 apply plugin:'dodola.anole.plugin'
 android {
     compileSdkVersion 28
