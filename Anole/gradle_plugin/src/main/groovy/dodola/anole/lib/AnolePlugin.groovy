@@ -32,11 +32,12 @@ class AnolePlugin /*extends Transform*/ implements Plugin<Project> {
 
     @Override
     public void apply(Project target) {
-        this.project = target;
+        this.project = target
+        logger = project.logger
         DefaultDomainObjectSet<ApplicationVariant> variants
         if (project.getPlugins().hasPlugin(AppPlugin)) {
-            variants = project.android.applicationVariants;
-            project.extensions.create(EXTENSION_NAME, RocooFixExtension);
+            variants = project.android.applicationVariants
+            project.extensions.create(EXTENSION_NAME, RocooFixExtension)
             applyTask(project, variants);
 
             println(ReflectionToStringBuilder.toString(project.android, RecursiveToStringStyle.MULTI_LINE_STYLE));
@@ -44,7 +45,6 @@ class AnolePlugin /*extends Transform*/ implements Plugin<Project> {
 //            project.android.registerTransform(this);
 
         }
-        logger = project.logger;
     }
 
 //    @Override
@@ -139,6 +139,7 @@ class AnolePlugin /*extends Transform*/ implements Plugin<Project> {
                 def dexTask = project.tasks.findByName(RocooUtils.getDexTaskName(project, variant))
                 def proguardTask = project.tasks.findByName(RocooUtils.getProGuardTaskName(project, variant))
 
+                logger.quiet "preDexTask = $preDexTask" + " , dexTask = $dexTask" + " , proguardTask = $proguardTask"
 //                println(ReflectionToStringBuilder.toString(dexTask.inputs.files.each, RecursiveToStringStyle.MULTI_LINE_STYLE));
 
 

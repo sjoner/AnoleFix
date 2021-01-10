@@ -12,7 +12,10 @@
       <entry name="!?*.clj" />
     </wildcardResourcePatterns>
     <bytecodeTargetLevel>
+      <module name="Anole.app" target="14" />
       <module name="Anole.gradle_plugin" target="1.8" />
+      <module name="Anole.runtime" target="14" />
+      <module name="sjoner.anole.plugin.Anole.gradle_plugin" target="14" />
     </bytecodeTargetLevel>
   </component>
 </project>

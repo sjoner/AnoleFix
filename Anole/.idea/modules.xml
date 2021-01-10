@@ -3,12 +3,16 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Anole.iml" filepath="$PROJECT_DIR$/Anole.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Anole.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Anole.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/gradle_plugin/Anole.gradle_plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/gradle_plugin/Anole.gradle_plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/runtime/Anole.runtime.iml" filepath="$PROJECT_DIR$/.idea/modules/runtime/Anole.runtime.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/AnoleFix.Anole.iml" filepath="$PROJECT_DIR$/.idea/modules/AnoleFix.Anole.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/buildsrc/buildsrc.iml" filepath="$PROJECT_DIR$/buildsrc/buildsrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/github.AnoleFix.Anole.iml" filepath="$PROJECT_DIR$/.idea/modules/github.AnoleFix.Anole.iml" />
       <module fileurl="file://$PROJECT_DIR$/gradle_plugin/gradle_plugin.iml" filepath="$PROJECT_DIR$/gradle_plugin/gradle_plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/runtime/runtime.iml" filepath="$PROJECT_DIR$/runtime/runtime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gradle_plugin/sjoner.anole.plugin.Anole.gradle_plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/gradle_plugin/sjoner.anole.plugin.Anole.gradle_plugin.iml" />
     </modules>
   </component>
 </project>

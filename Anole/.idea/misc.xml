@@ -9,11 +9,6 @@
     <option name="selectedJavaProfile" value="Baidu" />
     <option name="useOldEclipseJavaFormatter" value="true" />
   </component>
-  <component name="GroovyCompilerProjectConfiguration">
-    <excludes>
-      <directory url="file://$PROJECT_DIR$/../../../sdk/groovy-2.4.3" includeSubdirectories="true" />
-    </excludes>
-  </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
     <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
@@ -173,7 +168,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
